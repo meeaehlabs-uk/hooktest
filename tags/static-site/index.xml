@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Static-Site on Terminal</title>
+    <link>/tags/static-site/</link>
+    <description>Recent content in Static-Site on Terminal</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 13 Feb 2025 00:00:00 +0000</lastBuildDate><atom:link href="/tags/static-site/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>It Works</title>
+      <link>/posts/it-works/</link>
+      <pubDate>Thu, 13 Feb 2025 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/it-works/</guid>
+      <description>&lt;h2 id=&#34;if-your-reading-this-it-worked-&#34;&gt;If your reading this it worked !!!&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;https://media.tenor.com/bhAkIDazQS8AAAAM/it-kevin.gif&#34; alt=&#34;It Worked GIFs | Tenor&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Amazing you&amp;rsquo;ve now got your own static website hosted in docker but don&amp;rsquo;t stop now try running it from your own repo using the below command. Don&amp;rsquo;t forget to change the repo URL
+&lt;em&gt;Note this only works for public repos&lt;/em&gt;&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;docker run -d --restart always -p 80:80 \
+    -e GIT_REPO_URL=&amp;#34;https://github.com/example-user/example-repo.git&amp;#34; \
+    -e GIT_BRANCH=&amp;#34;main&amp;#34; \
+    --name my-static-site \
+    meeaehlabs/static-site:latest
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;If you have a &lt;strong&gt;Private Repo&lt;/strong&gt; you need to use the below command&lt;/p&gt;</description>
+      <content>&lt;h2 id=&#34;if-your-reading-this-it-worked-&#34;&gt;If your reading this it worked !!!&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;https://media.tenor.com/bhAkIDazQS8AAAAM/it-kevin.gif&#34; alt=&#34;It Worked GIFs | Tenor&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Amazing you&amp;rsquo;ve now got your own static website hosted in docker but don&amp;rsquo;t stop now try running it from your own repo using the below command. Don&amp;rsquo;t forget to change the repo URL
+&lt;em&gt;Note this only works for public repos&lt;/em&gt;&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;docker run -d --restart always -p 80:80 \
+    -e GIT_REPO_URL=&amp;#34;https://github.com/example-user/example-repo.git&amp;#34; \
+    -e GIT_BRANCH=&amp;#34;main&amp;#34; \
+    --name my-static-site \
+    meeaehlabs/static-site:latest
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;If you have a &lt;strong&gt;Private Repo&lt;/strong&gt; you need to use the below command&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;docker run -d --restart always -p 80:80 \
+    -e GIT_REPO_URL=&amp;#34;https://yourgitusername:classicgittoken@github.com/example-user/example-repo.git&amp;#34; \
+    -e GIT_BRANCH=&amp;#34;main&amp;#34; \
+    --name my-static-site \
+    meeaehlabs/static-site:latest
+&lt;/code&gt;&lt;/pre&gt;</content>
+    </item>
+    
+  </channel>
+</rss>
